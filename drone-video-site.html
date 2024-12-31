@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video con il Drone</title>
+    <title>Filippo Lodi Rizzini</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -16,6 +16,21 @@
             color: #fff;
             padding: 1rem;
             text-align: center;
+        }
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
         }
         main {
             padding: 2rem;
@@ -47,27 +62,78 @@
             padding: 1rem;
             margin-top: 2rem;
         }
+        .section {
+            margin-bottom: 2rem;
+        }
+        .section h2 {
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        .contact-form input, .contact-form textarea {
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            padding: 0.5rem;
+            border: none;
+            background-color: #333;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #555;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Video con il Drone</h1>
-        <p>Esplora il mondo visto dall'alto</p>
+        <h1>Filippo Lodi Rizzini</h1>
+        <p>Benvenuto nel mio sito personale</p>
     </header>
+    <nav>
+        <a href="#chi-sono">Chi sono</a>
+        <a href="#video">Video</a>
+        <a href="#contatti">Contatti</a>
+    </nav>
     <main>
-        <section class="video-gallery">
-            <div class="video-item">
-                <iframe src="https://www.icloud.com/sharedlinkyourvideo1"></iframe>
-                <div class="description">
-                    <p>Video del tramonto sul mare</p>
+        <section id="chi-sono" class="section">
+            <h2>Chi sono</h2>
+            <p>Ciao! Mi chiamo Filippo Lodi Rizzini. Sono uno studente di economia appassionato di tecnologia e riprese con il drone. Amo catturare la bellezza del mondo dall'alto e condividere queste prospettive uniche con gli altri.</p>
+        </section>
+        <section id="video" class="section">
+            <h2>I miei video</h2>
+            <p>Guarda alcuni dei miei video preferiti realizzati con il drone.</p>
+            <div class="video-gallery">
+                <div class="video-item">
+                    <iframe src="https://www.icloud.com/sharedlinkyourvideo1"></iframe>
+                    <div class="description">
+                        <p>Video del tramonto sul mare</p>
+                    </div>
+                </div>
+                <div class="video-item">
+                    <iframe src="https://www.icloud.com/sharedlinkyourvideo2"></iframe>
+                    <div class="description">
+                        <p>Riprese aeree di una foresta</p>
+                    </div>
                 </div>
             </div>
-            <div class="video-item">
-                <iframe src="https://www.icloud.com/sharedlinkyourvideo2"></iframe>
-                <div class="description">
-                    <p>Riprese aeree di una foresta</p>
-                </div>
-            </div>
+        </section>
+        <section id="contatti" class="section">
+            <h2>Contattami</h2>
+            <p>Vuoi collaborare o saperne di più? Compila il modulo qui sotto:</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Il tuo nome" required>
+                <input type="email" placeholder="La tua email" required>
+                <textarea placeholder="Il tuo messaggio" rows="5" required></textarea>
+                <button type="submit">Invia</button>
+            </form>
         </section>
     </main>
     <footer>
